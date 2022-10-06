@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- I just wanted to make a note that when I auto save my document, for <meta> and <link>, my vs. code automatically input the "/" for the self closing tag. When I validate my code, that is the only issue that comes up. I still cannot figure why this is the case from my settings but I'll keep trying to figure it out.  -->
+
+    <meta charset="utf-8" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h2><a href="#">Stephen.F's Blog</a></h2>
+      <div class="nav">
+        <div class="flex-item-inner"><a href="#">Home</a></div>
+        <div class="flex-item-inner"><a href="#">About</a></div>
+        <div class="flex-item-inner"><a href="#">Shop</a></div>
+        <div class="flex-item-inner"><a href="#">Log in</a></div>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="flex-container-layout">
+          <h1>Who's winning the World Cup?</h1>
+
+          <div class="flex-article">
+            <div class="img">
+              <img
+                src="img/worldcup.jpg"
+                alt="an image of the world cup"
+                width="200"
+              />
+              <!-- https://unsplash.com/photos/oW8ph9u07uo -->
+            </div>
+            <div class="text">
+              <p>
+                The 2022 Fifa World Cup will be taking place in Quatar. This is
+                the first time the tournament has been held in the Middle East.
+                There will be 32 teams taking part in the tournament to win the
+                coveted price, however only one country will prevail.
+              </p>
+
+              <p>
+                As a Nigieran national, the country I would have picked to win
+                the tournament would have been Nigeria, however they failed to
+                qualify for this year's World Cup. This would be the 2nd time in
+                their history and the first time in my lifetime.
+              </p>
+
+              <p>
+                As a result of that, there are other team that are very strong
+                and have a good chance of winning the tournament. France, the
+                defending champions have one of the best teams in the tournament
+                and you can never write of the Brazilian sqad, they have won the
+                most titles in overall. On the hand, Canada qualified for this
+                years tournament and although they do not have the strongest
+                team, they may shock the world. And last but not the least, I
+                cannot forget Englad. They never quite seem to be able to put it
+                all together in this tournament, but on paper they have a decent
+                team. Honorable menetions would be Belgium, Spain and Germany.
+              </p>
+              <p>
+                If I had to pick just one team, not based on who has the best
+                line up or which team has proven to be dominant, then I would
+                pick Argentina. Why? You ask. I would choose Argentina because
+                of the one an only Lionel Messi.
+              </p>
+              <div class="second-img">
+                <img
+                  src="img/kickball.jpg"
+                  alt="an image of the world cup"
+                  width="200"
+                />
+                <!-- https://unsplash.com/photos/qCrKTET_09o -->
+              </div>
+              <p>
+                For him to win the world would cement his legacy as one of the
+                greatest football players of all time and the greast of his
+                generation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side-content">
+          <h2>Recommended articles</h2>
+
+          <div class="flex-sidebar">
+            <div class="recommended-article">
+              <div class="flex-item-inner1">
+                <a
+                  href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022"
+                  >Countdown to Quatar 2022</a
+                >
+                <p>The official link to the 2022 Fifa World cup Website</p>
+              </div>
+              <div class="flex-item-inner2">
+                <a href="#">How many more hattricks can Haaland score? </a><p>With the trashing of Manchester United over the weekend. Haaland is now tied with Cristiano Ronaldo ...</p>
+              </div>
+              <div class="flex-item-inner3">
+                <a href="#">Is it time for Ronaldo to leave United?</a>
+                <p>Cristiano Ronaldo is one of the best players in the world even at the age of ...</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <form method="get" class="comment">
+        <div>
+          <div>
+            <label for="name">Your name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Lionel Messi"
+            />
+          </div>
+          <div>
+            <label for="email">Your email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Lionel.Messi@example.com"
+            />
+          </div>
+          <label for="message">Leave your comment:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message here"
+          ></textarea>
+        </div>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer class="footer">&copy; Copyright HTTP5111, 2022.</footer>
+  </body>
+</html>
